@@ -4,7 +4,15 @@
   "description": "FreeO2 is an automated oxygen supply system",
   "main": "src/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+
+    "copy": "npm run copy:html && npm run copy:manifest",
+    "copy:html": "node_modules/.bin/jade src/templates/index.jade -P -o build/",
+    "copy:manifest": "node_modules/.bin/ncp manifest.json build/manifest.json",
+
+    "clean": "rm -r build/*",
+    "build": "npm run copy && webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "npm install -g webpack typescript tsd"
   },
   "repository": {
     "type": "git",
@@ -22,9 +30,12 @@
   },
   "devDependencies": {
     "css-loader": "^0.16.0",
+    "jade": "^1.11.0",
     "json-loader": "^0.5.2",
+    "ncp": "^2.0.0",
     "style-loader": "^0.12.3",
     "stylus-loader": "^1.2.1",
-    "ts-loader": "^0.5.2"
+    "ts-loader": "^0.5.2",
+    "typescript": "^1.5.3"
   }
 }
