@@ -11,6 +11,7 @@ build
 .buildlog
 node_modules
 bower_components
+typings
 
 # Or broccoli working directory
 tmp
