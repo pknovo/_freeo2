@@ -7,5 +7,16 @@ html(lang='en')
     meta(name='generator', content='Automated Oxygen Supply System')
     link(rel='manifest', href='manifest.json')
     title FreeO2 | Automated Oxygen Supply System
+    style(type='text/css').
+      body {
+        margin: 0;
+      }
+      main {
+        width: 800px;
+        height: 600px;
+        background-color: #333;
+      }
   body
-    script(src='bundle.js')
+    main(class='main')
+    script(src='vendor.bundle.js')
+    script(src='app.bundle.js')

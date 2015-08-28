@@ -1,20 +1,30 @@
 "use strict";
 
+var webpack = require("webpack");
+
 var config = {
-  entry: './src/main.ts',
+  entry:{
+    app:'./src/main.jsx',
+    vendor: ['react']
+  },
   output: {
-    filename: 'build/bundle.js'
+    path: 'build',
+    filename: '[name].bundle.js'
   },
   resolve: {
-    // Add `.ts` and `.tsx` as a resolvable extension.
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', 'jsx','.styl']
   },
   module: {
     loaders: [
-      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-      { test: /\.ts(x?)$/, loader: 'ts-loader' }
-    ]
-  }
+      {test: /\.ts(x?)$/, loader: 'ts-loader'},
+      { test: /\.styl$/, loader: 'style-loader?singleton!css-loader!stylus-loader' },
+      { test: /\.js(x?)$/, exclude: /(node_modules|bower_components)/, loader: "babel-loader", query: {stage: 0}}
+    ],
+    noParse:['react']
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */"vendor", /* filename= */"vendor.bundle.js", Infinity)
+  ]
 };
 
 module.exports = config;
