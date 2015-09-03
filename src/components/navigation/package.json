@@ -1,0 +1,31 @@
+{
+  "name": "navigation-component",
+  "version": "0.0.1",
+  "items": [
+    {
+      "path": "/",
+      "description": "Splash",
+      "default": false
+    },
+    {
+      "path": "#/monitoring",
+      "description": "Monitoring",
+      "default": false
+    },
+    {
+      "path": "#/treatment",
+      "description": "Treatment",
+      "default": false
+    },
+    {
+      "path": "#/alarms",
+      "description": "Alarms",
+      "default": false
+    },
+    {
+      "path": "#/system-settingd",
+      "description": "System Settings",
+      "default": false
+    }
+  ]
+}

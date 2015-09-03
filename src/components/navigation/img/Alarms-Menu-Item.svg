@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="27px" height="32px" viewBox="0 0 27 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Alarms Menu Item</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="FreeO2-Mode" sketch:type="MSArtboardGroup" transform="translate(-259.000000, -541.000000)" stroke-linecap="round" stroke="#FFFFFF">
+            <g id="Main-Menu-v3" sketch:type="MSLayerGroup" transform="translate(-1.000000, 506.000000)">
+                <g id="Alarms-Menu-Item" transform="translate(260.000000, 35.500000)" sketch:type="MSShapeGroup">
+                    <g id="Icon" transform="translate(0.770787, 0.996094)">
+                        <path d="M19.7609384,14.6203508 L19.7609384,8.99713898 C19.7609384,5.28581915 16.6224364,2.24928475 12.7864896,2.24928475 C8.95054269,2.24928475 5.81204071,5.28581915 5.81204071,8.99713898 L5.81204071,14.6203508 C5.81204071,15.5200647 0,20.0186342 0,21.3682051 C0,23.2800971 5.11459582,24.7421322 12.7864896,24.7421322 C20.4583833,24.7421322 25.5729791,23.2800971 25.5729791,21.3682051 C25.5729791,20.0186342 19.7609384,15.5200647 19.7609384,14.6203508" id="Fill-1"></path>
+                        <path d="M13.9488977,1.12464237 C13.9488977,0.449856949 13.4839344,0 12.7864896,0 C12.0890447,0 11.6240814,0.449856949 11.6240814,1.12464237 L11.6240814,2.24928475 L11.6240814,3.37392712 C11.6240814,4.04871254 12.0890447,4.49856949 12.7864896,4.49856949 C13.4839344,4.49856949 13.9488977,4.04871254 13.9488977,3.37392712 L13.9488977,2.24928475 L13.9488977,1.12464237" id="Fill-3"></path>
+                        <path d="M12.7864896,25.9792388 L10.8103957,25.9792388 C10.5779141,26.3166315 10.4616733,26.54156 10.4616733,26.991417 C10.4616733,28.2285236 11.5078406,29.2407017 12.7864896,29.2407017 C14.0651385,29.2407017 15.1113058,28.2285236 15.1113058,26.991417 C15.1113058,26.54156 14.995065,26.3166315 14.7625834,25.9792388 L12.7864896,25.9792388" id="Fill-5"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

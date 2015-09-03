@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="194px" height="40px" viewBox="0 0 194 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 125</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home-Screen" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="FreeO2-Mode" sketch:type="MSArtboardGroup" transform="translate(-303.000000, 0.000000)" fill="#A0D468">
+            <g id="Main-info-bar" sketch:type="MSLayerGroup" transform="translate(0.000000, -4.000000)">
+                <path d="M303,3.0019992 C303,1.34404082 304.342427,0 306.008343,0 L493.991657,0 C495.653119,0 497,1.33917116 497,3.0019992 L497,35.255467 C497,36.9134254 495.665584,38.3691101 494.00954,38.5058164 C494.00954,38.5058164 430.330552,43.9101562 400,43.9101562 C367.669448,43.9101562 305.972035,38.511332 305.972035,38.511332 C304.330626,38.3711258 303,36.918295 303,35.255467 L303,3.0019992 Z" id="Rectangle-125" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

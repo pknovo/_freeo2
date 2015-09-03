@@ -1,31 +1,37 @@
 import React from "react";
-import Splash from "./Splash";
-import Monitoring from "./Monitoring";
+import Splash from "./Splash.jsx";
+import Monitoring from "./Monitoring.jsx";
+import Navigation from "./navigation/navigation.jsx";
 
 class Application extends React.Component {
 
   static defaultProps = {
-    initialCount: 2000
+    route: '/'
   };
 
   static propTypes = {
-    initialCount: React.PropTypes.number.isRequired
+    route: React.PropTypes.string.isRequired
   };
 
   state = {
-    count: this.props.initialCount
+    route: this.props.route
   };
 
   render() {
     return (
       <div>
-        {this.state.count}
         <Splash />
+        <Navigation activeRoute={ this.state.route }/>
       </div>
     );
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    window.addEventListener('hashchange', () => {
+      var route = window.location.hash.substr(1);
+      this.setState({route: route});
+    });
+  }
 }
 
 export default Application;

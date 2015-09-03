@@ -1,24 +1,21 @@
-"using strict";
-
 var webpack = require('webpack');
-
-var definePlugin = new webpack.DefinePlugin({
-  __DEV__: JSON.stringify( JSON.parse( process.env.BUILD_DEV || 'true') ),
-  __PRERELEASE__: JSON.stringify( JSON.parse( process.env.BUILD_PRERELEASE || 'false') )
-});
+var OUTPUT_PATH = 'build';
+var OUTPUT_FILENAME = '[name].bundle.js';
 
 module.exports = {
   entry: {
-    main : './src/main.js'
+    app: './src/main.js',
+    vendor: ['react', 'rx']
   },
   output: {
-    filename: './build/[name].bundle.js'
+    path: OUTPUT_PATH,
+    filename: OUTPUT_FILENAME
   },
   resolve: {
     // Add `.ts` and `.tsx` as a resolvable extension.
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.jsx']
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.jsx', '.styl']
   },
-  //devtool: 'source-map',
+  //devtool: 'eval',
   module: {
     loaders: [
       {
@@ -29,8 +26,11 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel?stage=0'
-      }
+      },
+      {test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader'}
     ]
   },
-  plugins: [definePlugin]
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin("vendor", OUTPUT_FILENAME)
+  ]
 };
