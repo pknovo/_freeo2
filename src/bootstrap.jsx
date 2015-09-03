@@ -1,5 +1,5 @@
 import React from "react";
-import Application from "./components/Application";
+import Application from "./components/Application.jsx";
 
 const ROOT_NODE_SELECTOR = "#main";
 
